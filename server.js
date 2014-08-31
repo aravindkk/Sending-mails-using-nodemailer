@@ -37,7 +37,7 @@ app.post('/send', function(req,res){
  console.log(req.body.letter);
  var mailOptions = {
     from: 'Love Letters ✔ <foo@blurdybloop.com>', // sender address
-    to: 'aravindbharathykk@gmail.com, myscrapbookofpeople@gmail.com, '+req.body.mailid, // list of receivers
+    to: req.body.mailid, // list of receivers
     subject: 'Hello ✔', // Subject line
     text: 'Hello world ✔', // plaintext body
     html: '<b>'+req.body.letter+'</b>' // html body
