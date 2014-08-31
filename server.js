@@ -14,8 +14,8 @@ var application_root=__dirname,
 var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-        user: 'myscrapbookofpeople@gmail.com',
-        pass: '[godblessyou]'
+        user: 'your_mail_id@gmail.com',
+        pass: 'your_password'
     }
 });
 
