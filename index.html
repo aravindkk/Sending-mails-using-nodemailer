@@ -1,0 +1,26 @@
+<html>
+  <style>
+    .col {
+      outline-color: blue;
+    }
+    ::-webkit-input-placeholder {
+      color: black;
+    }
+    :-moz-placeholder {
+      color: black;
+    }
+    ::-moz-placeholder {
+      color: black;
+    }
+    :-ms-input-placeholder {
+      color: black;
+    }
+  </style>
+  <body>
+  <form id="mailer" name="mailer" method="post" action="/send">
+   <input type="text" name="mailid" class="col" placeholder="To mail id" />
+   <input type="text" name="letter" class="col" placeholder="Your message" />
+   <input type="submit" value="Send my letter!" />
+  </form>
+  </body>
+</html>
